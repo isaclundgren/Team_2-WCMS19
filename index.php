@@ -1,9 +1,9 @@
 <?
-include ('templates/header.php')
+include ('templates/header.php');
 ?>
 <? 
-include ('config/dbconn.php')
+include ('config/dbconn.php');
 ?>
 <?
-include ('templates/footer.php')
+include ('templates/footer.php');
 ?>
