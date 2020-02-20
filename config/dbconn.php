@@ -32,7 +32,7 @@ try {
         signup_lastname VARCHAR(50) NOT NULL,
         signup_mail VARCHAR(50) NOT NULL);";
     
-        $r = $conn->exec($sql);
+        $conn->exec($sql);
        
     }
     catch(PDOException $e)
