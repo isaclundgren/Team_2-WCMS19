@@ -14,7 +14,7 @@
     $stmt->execute();
 
     if($stmt){
-        header('location:index.php');
+        header('location:../index.php');
     }else{
         echo 'failed';
     }
