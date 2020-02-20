@@ -23,7 +23,8 @@ try {
     CREATE TABLE IF NOT EXISTS user_accounts (
         id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         user_mail VARCHAR(50) NOT NULL,
-        user_password VARCHAR(30) NOT NULL);
+        user_password VARCHAR(30) NOT NULL,
+        user_admin BOOLEAN);
     CREATE TABLE IF NOT EXISTS event_signup (
         id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         signup_id int(11) NOT NULL,
