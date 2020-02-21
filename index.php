@@ -74,9 +74,9 @@ include ('config/dbconn.php');
                             <span class="card-title grey-text text-darken-4"><? echo $event['title']?><i class="material-icons right">close</i></span>
                             <?foreach ($attending as $attend){?>
                                 <?if($attend['event_id'] == $event['event_id']){?>
-                                <p><? echo $attend['signup_firstname']?></p>
-                                <p><? echo $attend['signup_lastname']?></p>
+                                <p><? echo 'Name: ' . $attend['signup_firstname'] . ' ' . $attend['signup_lastname']?></p>
                                 <p><? echo $attend['signup_mail']?></p>
+                                <hr>
                                 <?  } ?>
                             <? } ?>   
                         </div>
