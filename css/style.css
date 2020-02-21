@@ -6,3 +6,30 @@
 .card {
     width: 50% !important;
 }
+
+main{
+    background-color: #FFF4E8;
+
+}
+.btn{
+    background-color: #B3997F ;
+}
+
+.btn:hover{
+    background-color: #6DA0B3;
+}
+nav{
+    background-color: #CFF2FF;
+    
+}
+.nav-wrapper a{
+    color: #3D4849;
+}
+
+p{
+    color: #3D4849;
+}
+
+.main-content{
+   padding-bottom: 5vh;
+}

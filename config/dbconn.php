@@ -13,11 +13,11 @@ try {
     // sql to create event_table
     $sql = "CREATE TABLE IF NOT EXISTS event_table (
         event_id INT(11) AUTO_INCREMENT PRIMARY KEY,
-        title VARCHAR(30) NOT NULL,
-        content VARCHAR(30) NOT NULL,
-        category VARCHAR(50) NOT NULL,
-        event_location VARCHAR(50) NOT NULL,
-        event_time VARCHAR(50) NOT NULL,
+        title VARCHAR(255) NOT NULL,
+        content TEXT(1000) NOT NULL,
+        category VARCHAR(255) NOT NULL,
+        event_location VARCHAR(255) NOT NULL,
+        event_time VARCHAR(255) NOT NULL,
         userid int(11) DEFAULT NULL,
         reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP);
     

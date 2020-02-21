@@ -27,10 +27,10 @@ include ('config/dbconn.php');
                     <div class="card-content">
 
                         <span class="card-title activator grey-text text-darken-4"><? echo $event['title']?><i class="material-icons right">more_vert</i></span>
-                            <p><? echo $event['content']?></p>
-                            <p><? echo $event['event_location']?></p>
-                            <p><? echo $event['event_time']?></p>
-                            <p><? echo $event['reg_date']?></p>
+                            <p class="main-content"><? echo $event['content']?></p>
+                            <p>Adress: <? echo $event['event_location']?></p>
+                            <p>Tid: <? echo $event['event_time']?></p>
+                            <p>Skapad: <? echo $event['reg_date']?></p>
 
                         <ul class="collapsible">
                             <li>
@@ -44,9 +44,7 @@ include ('config/dbconn.php');
                                     <label for="signup_mail">Email</label>
                                     <input type="text" name="signup_mail" id="">
                                     <input type="hidden" value="<? echo $event['event_id']?>" name="event_id">
-                                    <input type="submit" name="submit" value="submit" >Sign up</button>
-                                    <? echo $event['event_id'] ?>
-                                   
+                                    <input type="submit" name="submit" value="submit" class="btn waves-effect waves-light" ></button>
                                 </form>
                             </div>
                             </li>
@@ -55,14 +53,14 @@ include ('config/dbconn.php');
                     
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><? echo $event['title']?><i class="material-icons right">close</i></span>
+                        <span class="card-title grey-text text-darken-4"><h2>Attending</h2><i class="material-icons right">close</i></span>
                         <?foreach ($attending as $attend){?>
                             <?if($attend['event_id'] == $event['event_id']){?>
-                            <p><? echo $attend['signup_firstname']?></p>
-                            <p><? echo $attend['signup_lastname']?></p>
-                            <p><? echo $attend['signup_mail']?></p>
-                            <?  } ?>
-                        <? } ?>   
+                                <p><? echo 'Name: ' . $attend['signup_firstname'] . ' ' . $attend['signup_lastname']?></p>
+                                <p><? echo 'Email: ' . $attend['signup_mail']?></p>
+                                <hr>
+                            <?} ?>
+                        <?} ?>   
                     </div>
             </div>
         
