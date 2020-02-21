@@ -14,13 +14,39 @@
 </head>
 <body>
 <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="event/createevent.php">create</a></li>
-        <li><a href="../index.php">Components</a></li>
-        <li><a href="#">JavaScript</a></li>
-      </ul>
+    <div class="nav-wrapper teal ligthen-1">
+        <div class="container">
+        <a href="#" class="brand-logo">EventPlanner</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+          <div class="material-icons">menu</div>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="event/createevent.php">Create Event</a></li>
+          <li><a href="../index.php">Home</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
     </div>
-  </nav>
+</nav>
+
+  <ul class="sidenav" id="mobile-links" id="mobile-links">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="http://materializecss.com/images/office.jpg" alt="Background User View" alt="Background user view">
+          </div>
+          <a href="#user"><img class="circle" src="http://materializecss.com/images/yuna.jpg" alt="Avatar User View"></a>
+          <a href="#name"><span class="white-text name">Event Planner</span></a>
+          <a href="#name"><span class="white-text name">eventplanner@ev.io</span></a>
+        </div>
+      </li>
+        <li><a href="#"><span>Home</span>
+                <i class="material-icons left">Home</i></a></li>
+        <li><a href="#"><span>Create Event</span>
+                <i class="material-icons left">create</i></a></li>
+        <li><a href="#"><span>Login</span>
+                <i class="material-icons left">https</i></a></li>
+    </ul>
+
+
     
