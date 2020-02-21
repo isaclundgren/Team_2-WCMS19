@@ -12,6 +12,8 @@ include ('config/dbconn.php');
 
 <? require ('event/getevents.php');?>
 
+<? require ('event/showattending.php');?>
+
    
 
     <!-- // display events -->
@@ -23,7 +25,13 @@ include ('config/dbconn.php');
                     <img class="activator" src="https://picsum.photos/1000">
                 </div>
                     <div class="card-content">
+
                         <span class="card-title activator grey-text text-darken-4"><? echo $event['title']?><i class="material-icons right">more_vert</i></span>
+                            <p><? echo $event['content']?></p>
+                            <p><? echo $event['event_location']?></p>
+                            <p><? echo $event['event_time']?></p>
+                            <p><? echo $event['reg_date']?></p>
+
                         <ul class="collapsible">
                             <li>
                             <div class="collapsible-header"><p>Sign up</p></div>
@@ -43,15 +51,18 @@ include ('config/dbconn.php');
                             </div>
                             </li>
                         </ul>
- 
+
+                    
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4"><? echo $event['title']?><i class="material-icons right">close</i></span>
-                        <p><? echo $event['content']?></p>
-                        <p><? echo $event['event_location']?></p>
-                        <p><? echo $event['event_time']?></p>
-                        <p><? echo $event['reg_date']?></p>
-
+                        <?foreach ($attending as $attend){?>
+                            <?if($attend['event_id'] == $event['event_id']){?>
+                            <p><? echo $attend['signup_firstname']?></p>
+                            <p><? echo $attend['signup_lastname']?></p>
+                            <p><? echo $attend['signup_mail']?></p>
+                            <?  } ?>
+                        <? } ?>   
                     </div>
             </div>
         
@@ -65,5 +76,3 @@ include ('templates/footer.php');
 ?>
 
 
-      
-</script>
