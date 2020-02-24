@@ -1,8 +1,8 @@
 <?include('../config/dbconn.php')?>
-
+<? include('addimage.php')?>
 <?  
-    $sql="INSERT INTO event_table (title, content, category, event_location, event_time) 
-    VALUES(:title, :content, :category, :event_location, :event_time)";
+    $sql="INSERT INTO event_table (title, content, category, event_location, event_time, event_img) 
+    VALUES(:title, :content, :category, :event_location, :event_time, :event_img)";
 
     $stmt = $conn->prepare($sql);
 
@@ -11,6 +11,10 @@
     $stmt->bindParam(":category", $_POST['category']);
     $stmt->bindParam(":event_location", $_POST['event_location']);
     $stmt->bindParam(":event_time", $_POST['event_time']);
+    $stmt->bindParam(":event_img", $coverpic);
+    
+
+
     $stmt->execute();
 
     if($stmt){
