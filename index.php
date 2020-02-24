@@ -42,7 +42,9 @@ include ('config/dbconn.php');
                     <div class="col s12 l6 l2">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="https://picsum.photos/1000">
+                            
+                            <img class="activator" src="uploads/<?echo $event['event_img']?>">
+
                         </div>
 
                         <div class="card-content">

@@ -19,6 +19,7 @@ try {
         event_location VARCHAR(255) NOT NULL,
         event_time VARCHAR(255) NOT NULL,
         userid int(11) DEFAULT NULL,
+        event_img varchar(255),
         reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP);
     
     CREATE TABLE IF NOT EXISTS user_accounts (
