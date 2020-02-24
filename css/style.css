@@ -1,28 +1,29 @@
-
-
-main{
+main {
     background-color: #FFF4E8;
 
 }
-.btn{
-    background-color: #B3997F ;
+
+.btn {
+    background-color: #B3997F;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #6DA0B3;
 }
-nav{
+
+nav {
     background-color: #CFF2FF;
-    
+
 }
-.nav-wrapper a{
+
+.nav-wrapper a {
     color: #3D4849;
 }
 
-p{
+p {
     color: #3D4849;
 }
 
-.main-content{
-   padding-bottom: 5vh;
+.main-content {
+    padding-bottom: 5vh;
 }

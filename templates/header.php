@@ -11,6 +11,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- own css stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+      $('.chkbox').click(function () {
+      var text = "";
+      $('.chkbox:checked').each(function () {
+        text += $(this).val() + ',';
+      });
+      text = text.substring(0, text.length - 1);
+      $('#selectedtext').val(text);
+      var count = $("[type='checkbox']:checked").length;
+  });
+});
+    </script>
 </head>
 <body>
 <nav>

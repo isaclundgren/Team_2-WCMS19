@@ -1,18 +1,11 @@
-<?
-include ('templates/header.php');
-?>
-<? 
-include ('config/dbconn.php');
-?>
-<!-- send info to db Signup_event -->
 
-<!--  -->
+<?include ('templates/header.php');?>
 
+<?include ('config/dbconn.php');?>
 
+<?include ('event/getevents.php');?>
 
-<? require ('event/getevents.php');?>
-
-<? require ('event/showattending.php');?>
+<?include ('event/showattending.php');?>
 
    
 
@@ -40,7 +33,7 @@ include ('config/dbconn.php');
             <div class="row">
                 <? foreach ($events as $event){ ?>
                     <div class="col s12 l6 l2">
-                        <div class="card">
+                        <div class="card hoverable z-depth-2">
                             <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="https://picsum.photos/1000">
                         </div>
@@ -51,6 +44,13 @@ include ('config/dbconn.php');
                                 <p><? echo $event['event_location']?></p>
                                 <p><? echo $event['event_time']?></p>
                                 <p><? echo $event['reg_date']?></p>
+                                <hr>
+                                <p>Kategorier</p>
+                                <ul>
+                                <? foreach(explode(',', $event['category']) as $cat): ?>
+                                    <a class="waves-effect waves-light btn-small"><?echo ($cat)?></a>
+                                <? endforeach; ?>
+                            </ul>
                                 <ul class="collapsible">
                                 <li>
                                 <div class="collapsible-header"><p>Sign up</p></div>
