@@ -7,6 +7,9 @@
 
 <?include ('event/showattending.php');?>
 
+
+
+
    
 
     <!-- // display events -->
@@ -59,14 +62,14 @@
                                     <div class="collapsible-body">
                                     <form action="event/executesignup.php" method="POST" >
                                     <label for="signup_firstname">Firstname</label>
-                                    <input type="text" name="signup_firstname">
+                                    <input type="text" name="signup_firstname" required>
                                     <label for="signup_lastname">Lastname</label>
-                                    <input type="text" name="signup_lastname" id="">
+                                    <input type="text" name="signup_lastname" required>
                                     <label for="signup_mail">Email</label>
-                                    <input type="text" name="signup_mail" id="">
+                                    <input type="email" name="signup_mail" required>
                                     <input type="hidden" value="<? echo $event['event_id']?>" name="event_id">
                                     <input type="submit" name="submit" value="submit" >Sign up</button>
-                                    <? echo $event['event_id'] ?>
+                                    <//? echo $event['event_id'] ?>
                                     </form>
                         </div>
                                 </li>
@@ -77,7 +80,7 @@
                             <?foreach ($attending as $attend){?>
                                 <?if($attend['event_id'] == $event['event_id']){?>
                                 <p><? echo 'Name: ' . $attend['signup_firstname'] . ' ' . $attend['signup_lastname']?></p>
-                                <p><? echo $attend['signup_mail']?></p>
+                                <p><? echo 'Email: ' .$attend['signup_mail']?></p>
                                 <hr>
                                 <?  } ?>
                             <? } ?>   
