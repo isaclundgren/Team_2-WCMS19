@@ -17,17 +17,10 @@
     <div class="parallax-container">
       <div class="parallax"><img src="https://picsum.photos/1000"></div>
         <div id="div" class="valign-wrapper">
-        <a class="waves-effect waves-light btn-large center"><i class="material-icons right">cloud</i>button</a>
+        <a href="event/createevent.php "class="waves-effect waves-light btn btn-large"><i class="material-icons right">chrome_reader_mode</i>Create event</a>
         </div>
     </div>
 
-
-    <div class="section white">
-      <div class="row container">
-        <h2 class="header">Parallax</h2>
-        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-      </div>
-    </div>
 
     
        
@@ -44,12 +37,15 @@
                         </div>
 
                         <div class="card-content">
+                            <div class="cardcontent">
                                 <span class="card-title activator grey-text text-darken-4"><? echo $event['title']?><i class="material-icons right">more_vert</i></span>
                                 <p><? echo $event['content']?></p>
-                                <p><? echo $event['event_location']?></p>
-                                <p><? echo $event['event_time']?></p>
-                                <p><? echo $event['reg_date']?></p>
+                                <br>
+                                <p>Location: <? echo $event['event_location']?></p>
+                                <p>Time: <? echo $event['event_time']?></p>
+                                <p>Date: <? echo $event['reg_date']?></p>
                                 <hr>
+                            </div>
                                 <p>Kategorier</p>
                                 <ul>
                                 <? foreach(explode(',', $event['category']) as $cat): ?>
@@ -68,8 +64,8 @@
                                     <label for="signup_mail">Email</label>
                                     <input type="email" name="signup_mail" required>
                                     <input type="hidden" value="<? echo $event['event_id']?>" name="event_id">
-                                    <input type="submit" name="submit" value="submit" >Sign up</button>
-                                    <//? echo $event['event_id'] ?>
+                                    <input type="submit" name="submit" value="submit" class="waves-effect waves-light btn"></button>
+                                    
                                     </form>
                         </div>
                                 </li>

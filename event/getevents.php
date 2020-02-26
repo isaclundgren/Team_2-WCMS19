@@ -7,4 +7,15 @@
     $events = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
+
     // $conn = null;?>
+
+<!-- 
+    validate user accounts
+ -->
+<?
+
+
+
+
+?>

@@ -28,16 +28,16 @@
 </head>
 <body>
 <nav>
-    <div class="nav-wrapper teal ligthen-1">
+    <div class="nav-wrapper" style=" background-color: #CFF2FF !important;">
         <div class="container">
-        <a href="#" class="brand-logo">EventPlanner</a>
+        <a href="#" class="brand-logo" style="color: #3D4849 !important;">EventPlanner</a>
         <a href="#" class="sidenav-trigger" data-target="mobile-links">
           <div class="material-icons">menu</div>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="event/createevent.php">Create Event</a></li>
-          <li><a href="../index.php">Home</a></li>
-          <li><a href="#">Login</a></li>
+          <li><a href="event/createevent.php" style="color: #3D4849 !important;">Create Event</a></li>
+          <li><a href="../index.php" style="color: #3D4849 !important;">Home</a></li>
+          <li><a href="#" style="color: #3D4849 !important;">Login</a></li>
         </ul>
       </div>
     </div>

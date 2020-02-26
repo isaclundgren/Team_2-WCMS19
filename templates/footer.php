@@ -1,16 +1,18 @@
-        <footer class="page-footer">
-          <div class="container">
+        <footer class="page-footer" style="background-color:#CFF2FF;">
+          <div class="container" >
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                <h5 class="white-text" style="color: #3D4849 !important;">Footer Content</h5>
+                <p class="grey-text text-lighten-4" style="color: #3D4849 !important;">You can use rows and columns here to organize your footer content.</p>
               </div>
 
             </div>
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2014 Copyright Text
+            <p style="color: #3D4849 !important;"> © 2014 Copyright Text</p>
+            
+       
             </div>
           </div>
         </footer>

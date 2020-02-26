@@ -10,9 +10,24 @@ main {
 .btn:hover {
     background-color: #6DA0B3;
 }
+.btn-large{
+    position: relative;
+    top: 30vh;
+    left:42.5vw;
+} 
+select{
+    display: block !important;
+}
 
+@media screen and (max-width: 500px) {
+    .btn-large{
+        position: relative;
+        top: 30vh;
+        left:33vw;
+    } 
+  }
 nav {
-    background-color: #CFF2FF;
+    background-color: #CFF2FF !important;
 
 }
 
@@ -26,4 +41,12 @@ p {
 
 .main-content {
     padding-bottom: 5vh;
+}
+
+.cardcontent{
+    margin-bottom: 5vh;
+}
+
+footer{
+    background-color: #CFF2FF;
 }

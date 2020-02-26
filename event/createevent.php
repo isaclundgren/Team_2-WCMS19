@@ -23,7 +23,7 @@
         <input type="text" name="event_location" required>
 
         <label for="event_time">Time</label>
-        <select name="event_time"><?php echo get_times(); ?></select>
+        <select name="event_time" style="display:block !important"><?php echo get_times(); ?></select>
 
 
         <p>
@@ -58,7 +58,7 @@
         
         <p><input type="file" name="coverimg" required="required" /></p>
         <div class="center">
-        <p><input type="submit" name="cover_up" class="btn brand z-depth-0" value="Submit"/></p>  
+        <p><input type="submit" name="cover_up" class="waves-effect waves-light btn" style=" background-color: #B3997F;" value="Submit"/></p>  
         </div>      
     </form>
         <br>
