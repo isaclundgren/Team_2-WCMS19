@@ -1,0 +1,44 @@
+                                ANVÄNDARMANUAL FÖR EVENTPLANNER
+                    ∞∞∞∞∞∞-----------------------------------------------∞∞∞∞∞∞
+
+                    När du först öppnar sidan så kommer du komma till våran statsida
+                    På statsidan så finns det olika valmöjligheter.
+                    som standard så visas alla kommande event ut.
+                    högst upp till höger kan du även välja att skapa ett nytt event och att logga in på sidan. 
+
+                    SKRIVA UPP DIG PÅ EVENT
+
+                    Längst ner i eventrutan på eventet du vill gå på hittar du en knapp som heter "sign up". 
+                    i sign up skriver du sedan förnamn, efternamn och mailadress.
+                    klicka sedan på "submit" för att anmäla dig till eventet.
+                    Är du osäker på om du redan är anmäld kan du alltid klicka på eventet för att se listan på alla anmälda.
+
+
+                    SKAPA EVENT
+
+                    För att skapa ett event så klickar du högst upp till höger på länken "create event".
+                    Väl inne på create event så fyller du i dom olika text-rutorna. 
+                    lite längre ner i formuläret sså kan du välja tid och lägga till en bild.
+                    För att lägga till en bild så klickar du på "välj fil" och leter upp bilden på din dator.
+                    vill du så kna du även dra bilden från din dator till knappen "välj fil"
+                    Det är inte alla bilder som fungerar, men det kommer upp en text ifall du har valt en icke fungerande bild.
+                    Klicka sedan på "SUBMIT" knappen för att skicka iväg ditt event.
+
+                    SKAPA KONTO PÅ SIDAN.
+
+                    Klicka på länken "skapa konto" i meny raden högst upp till höger.
+                    När du sedan är inne så fyller du i text rutorna korrekt, alltid bra att dubbelkolla så att du har skrivit rätt.
+                    klicka sedan på "submit" så är dit konto skapat.
+
+                    LOGGA IN PÅ SIDAN
+
+                    För att logga in på sidan så klickar du på "logga in" i meny radan högst upp på sidan"
+                    Fyll sedan in dina inloggnings-uppgifter och klicka sedan på "submit" så är du nu inloggad.
+
+                    
+
+
+
+
+
+
