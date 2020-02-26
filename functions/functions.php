@@ -1,3 +1,5 @@
+
+<!-- Copy and pasted script to show time and including the script in createevent.php -->
 <?  
     function get_times( $default = '19:00', $interval = '+30 minutes' ) {
 

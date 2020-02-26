@@ -1,3 +1,5 @@
+<!-- Inserting values into event_signup  -->
+
 <?  
     include('../config/dbconn.php');
 

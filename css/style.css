@@ -1,3 +1,7 @@
+* {
+    font-family: 'Roboto';
+}
+
 main {
     background-color: #FFF4E8;
 
@@ -10,22 +14,25 @@ main {
 .btn:hover {
     background-color: #6DA0B3;
 }
-.btn-large{
+
+.btn-large {
     position: relative;
     top: 30vh;
-    left:42.5vw;
-} 
-select{
+    left: 42.5vw;
+}
+
+select {
     display: block !important;
 }
 
 @media screen and (max-width: 500px) {
-    .btn-large{
+    .btn-large {
         position: relative;
         top: 30vh;
-        left:33vw;
-    } 
-  }
+        left: 33vw;
+    }
+}
+
 nav {
     background-color: #CFF2FF !important;
 
@@ -43,10 +50,10 @@ p {
     padding-bottom: 5vh;
 }
 
-.cardcontent{
+.cardcontent {
     margin-bottom: 5vh;
 }
 
-footer{
+footer {
     background-color: #CFF2FF;
 }

@@ -1,3 +1,6 @@
+
+
+<!-- Inserting values into event_table and also getting the correct image that the user uploads -->
 <?include('../config/dbconn.php')?>
 <? include('addimage.php')?>
 <?  

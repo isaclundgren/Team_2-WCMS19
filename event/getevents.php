@@ -1,21 +1,12 @@
+
+<!-- Getting events and looping through each of them in index.php -->
 <?
-// include('config/dbconn.php');
 
     $sql = "SELECT * FROM event_table";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
     $events = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-
-
-    // $conn = null;?>
-
-<!-- 
-    validate user accounts
- -->
-<?
-
-
-
-
 ?>
+
+

@@ -11,8 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- own css stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
+
+      //Getting each value of categories and appending to box with id of selectedtext which has the name of category that corresponds with the datebase    
       $(document).ready(function () {
       $('.chkbox').click(function () {
       var text = "";
@@ -30,7 +35,7 @@
 <nav>
     <div class="nav-wrapper" style=" background-color: #CFF2FF !important;">
         <div class="container">
-        <a href="#" class="brand-logo" style="color: #3D4849 !important;">EventPlanner</a>
+        <a href="../index.php" class="brand-logo" style="color: #3D4849 !important;">EventPlanner</a>
         <a href="#" class="sidenav-trigger" data-target="mobile-links">
           <div class="material-icons">menu</div>
         </a>
