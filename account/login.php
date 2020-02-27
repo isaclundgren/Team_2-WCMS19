@@ -1,66 +1,61 @@
 <?php
+include('../config/dbconn.php');
+include('../templates/header.php');
+include('getsignup.php');
 session_start();
 {
-    try
-    $connect = new PDO("mysql:host=$host; dbname=$team_2", $username, $password);
-    $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    if(isset($POST["login"]))
+    if(isset($_POST["login"]))
     {
-        if(empty($_POST["username"]) ||empty($_POST["password"])) {
+        if(empty($_POST["user_mail"]) ||empty($_POST["user_password"])) {
            $message = '<label>All fields are required</label>'; 
         }
         else
         {
-            $query = "SELECT * FROM user_accounts WHERE username = :username AND password = :password";
-            $statement = $connect->prepare($query);
-            $statement->execute(
+            $sql = "SELECT * FROM user_accounts WHERE user_mail = :user_mail AND user_password = :user_password";
+            $stmt = $conn->prepare($sql);
+            $stmt->execute(
                 array(
-                    'username' => $_POST["username"],
-                    'password' => $POST["password"]
+                    'user_mail' => $_POST["user_mail"],
+                    'user_password' => $_POST["user_password"]
                 )
                 );
-                $count = $statement->rowCount();
-                if($count > 0) {
-                    $_SESSION["username"] = $_POST["username"];
+                $count = $stmt->rowCount();
+                if($count > 0) 
+                {
+                    $_SESSION["user_mail"] = $_POST["user_mail"];
                     header("location:login_success.php");
                 }
-                else {
+                else 
+                {
                     $message = '<label>Wrong Data</label>';
                 }
         }
     }
-    }
-    catch(PDOException 
-        $error) {
-            $message = $error->getMessage();
-    }
-<?php 
- include('../config/dbconn');
- include('../templates/header.php');
- ?>
+}
+?>
  <?php
  if(isset($message))
 {
     echo '<label class="text-danger">'.$message.'</label>';
 }
- ?>
+?>
  <div class="container" 
     style="width:500px;">
     <h3 align="">Login</h3></br />
 
 <form method="post">
-    <label>Username</label>
+    <label></label>
     <input 
     type="text" 
-    name="username" 
+    name="user_mail" 
     class="form-control" />
     <br />
 
-    <label>Password</label>
+    <label>user_password</label>
     <input
     type="password"
-    name="password"
+    name="user_password"
     class="form-control" />
     <br />
     <input 
