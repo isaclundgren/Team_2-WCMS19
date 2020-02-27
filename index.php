@@ -10,11 +10,11 @@
 
 <?php
 session_start();
-if(isset($_SESSION["user_mail"]))
-{
-    echo '<h3>Login Success, Welcome - '.$_SESSION["user_mail"].'</h3>';
-    echo '<br /><br /br><a href="account/logout_success.php">Logout</a>';
-}
+// if(isset($_SESSION["user_mail"]))
+// {
+//     echo '<h3>Login Success, Welcome - '.$_SESSION["user_mail"].'</h3>';
+//     echo '<br /><br /br><a href="account/logout_success.php">Logout</a>';
+// }
 
 ?>
 
@@ -79,7 +79,8 @@ if(isset($_SESSION["user_mail"]))
                                 </ul>
                                 <form method="post" action="event/deleteevent.php">
                                 <?php if ($_SESSION['user_mail']) : ?>
-                                <button type="submit" name="submit" value="<?php echo ($event["event_id"]); ?>">Delete</button>
+                                <input type="hidden" value="<? echo $event['event_id']?>" name="event_id">
+                                <button type="submit" name="submit" value="Delete" class="waves-effect waves-light btn">Delete</button>
                                 <?php endif; ?>
                                 </form>
                     </div>
@@ -97,6 +98,12 @@ if(isset($_SESSION["user_mail"]))
                 </div>
             <? } ?> 
         </div>
+        <? if(isset($_SESSION["user_mail"])){
+                echo '<p>Login Success, Welcome - '.$_SESSION["user_mail"].'</p>';
+                echo '<br /><br /br><a href="account/logout_success.php">Logout</a>';
+                
+            }
+?>
       </div>
       
    
