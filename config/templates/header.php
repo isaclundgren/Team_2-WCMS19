@@ -11,13 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- own css stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
-
-      //Getting each value of categories and appending to box with id of selectedtext which has the name of category that corresponds with the datebase    
       $(document).ready(function () {
       $('.chkbox').click(function () {
       var text = "";
@@ -35,16 +30,14 @@
 <nav>
     <div class="nav-wrapper" style=" background-color: #CFF2FF !important;">
         <div class="container">
-        <a href="../index.php" class="brand-logo" style="color: #3D4849 !important;">EventPlanner</a>
+        <a href="#" class="brand-logo" style="color: #3D4849 !important;">EventPlanner</a>
         <a href="#" class="sidenav-trigger" data-target="mobile-links">
           <div class="material-icons">menu</div>
         </a>
         <ul class="right hide-on-med-and-down">
           <li><a href="event/createevent.php" style="color: #3D4849 !important;">Create Event</a></li>
           <li><a href="../index.php" style="color: #3D4849 !important;">Home</a></li>
-          <li><a href="../account/login.php" style="color: #3D4849 !important;">Login</a></li>
-          <li><a href="../account/signup.php" style="color: #3D4849 !important;">Signup</a></li>
-
+          <li><a href="#" style="color: #3D4849 !important;">Login</a></li>
         </ul>
       </div>
     </div>
@@ -65,9 +58,8 @@
                 <i class="material-icons left">Home</i></a></li>
         <li><a href="#"><span>Create Event</span>
                 <i class="material-icons left">create</i></a></li>
-        <li><a href=""><span>Login</span>
+        <li><a href="#"><span>Login</span>
                 <i class="material-icons left">https</i></a></li>
-               
     </ul>
 
 

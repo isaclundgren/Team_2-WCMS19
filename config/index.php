@@ -71,6 +71,10 @@
                                 </li>
                                 </ul>
                     </div>
+                    
+<?
+include ('templates/footer.php');
+?>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4"><? echo $event['title']?><i class="material-icons right">close</i></span>
                             <?foreach ($attending as $attend){?>
@@ -90,8 +94,5 @@
    
 
 
-<?
-include ('templates/footer.php');
-?>
 
 

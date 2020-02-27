@@ -6,7 +6,6 @@
 <?include('../functions/functions.php');?>
 
 
-<!-- Creating events  -->
 
 <main>
 
