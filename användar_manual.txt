@@ -35,6 +35,27 @@
                     För att logga in på sidan så klickar du på "logga in" i meny radan högst upp på sidan"
                     Fyll sedan in dina inloggnings-uppgifter och klicka sedan på "submit" så är du nu inloggad.
 
+
+
+
+                    ----------
+
+                    Använda tekniker: HTML, CSS, PHP, Materialize, jQuery, MySQL
+
+                    Kodmässigt har vi använt oss av forEach loopar som skriver ut event och visar upp detta för användaren.
+                    Vi gör också en jämförelse i index.php där vi inuti en forEach loop jämför om dom som kommer attenda eventet
+                    har samma id som själva eventet. Denna koppling har vi gjort i vår databas med hjälp av en foreign key. 
+
+                    För att få rätt bild till eventet inkluderar vi addimage.php i vår executeevent.php för att få tillgång till
+                    $coverpic variabeln som sedan skickar till rätt kolumn i vår tabell. 
+
+                    Till kategorierna använde vi oss av ett jQuery script där valda kategorier samlas i en box med samma namn som
+                    kolumnen i tabellen har och därför kan vi skicka med alla värden och sedan skriva ut detta. 
+
+
+
+
+
                     
 
 
