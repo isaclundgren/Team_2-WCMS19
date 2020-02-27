@@ -2,15 +2,15 @@
           <div class="container" >
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text" style="color: #3D4849 !important;">Random footer</h5>
-                <p class="grey-text text-lighten-4" style="color: #3D4849 !important;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis soluta ipsa alias quas magnam deleniti impedit blanditiis officiis, nulla eveniet corrupti rerum, ad officia numquam ea vel odio voluptate! Cupiditate!</p>
+                <h5 class="white-text" style="color: #3D4849 !important;">Footer Content</h5>
+                <p class="grey-text text-lighten-4" style="color: #3D4849 !important;">You can use rows and columns here to organize your footer content.</p>
               </div>
 
             </div>
           </div>
           <div class="footer-copyright">
             <div class="container">
-            <p style="color: #3D4849 !important;"> © 2019 Team 2</p>
+            <p style="color: #3D4849 !important;"> © 2014 Copyright Text</p>
             
        
             </div>

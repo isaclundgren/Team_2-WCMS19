@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="http://tenta.test/" />
     <title>Event-Planner.php</title>
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -11,13 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- own css stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
-
-      //Getting each value of categories and appending to box with id of selectedtext which has the name of category that corresponds with the datebase    
       $(document).ready(function () {
       $('.chkbox').click(function () {
       var text = "";
@@ -29,21 +25,21 @@
       var count = $("[type='checkbox']:checked").length;
   });
 });
-
     </script>
 </head>
 <body>
 <nav>
-    <div class="nav-wrapper" style=" background-color: #CFF2FF !important;">
+    <div class="nav-wrapper teal ligthen-1">
         <div class="container">
-        <a href="../index.php" class="brand-logo" style="color: #3D4849 !important;">EventPlanner</a>
+        <a href="#" class="brand-logo">EventPlanner</a>
         <a href="#" class="sidenav-trigger" data-target="mobile-links">
           <div class="material-icons">menu</div>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="event/createevent.php" style="color: #3D4849 !important;">Create Event</a></li>
-          <li><a href="../index.php" style="color: #3D4849 !important;">Home</a></li>
-          <li><a href="account/login.php" style="color: #3D4849 !important;">Login</a></li>
+          <li><a href="event/createevent.php">Create Event</a></li>
+          <li><a href="../index.php">Home</a></li>
+          <li><a href="account/login.php">Login</a></li>
+          <li><a href="account/signup.php">signup</a></li>
         </ul>
       </div>
     </div>
@@ -64,9 +60,8 @@
                 <i class="material-icons left">Home</i></a></li>
         <li><a href="#"><span>Create Event</span>
                 <i class="material-icons left">create</i></a></li>
-        <li><a href=""><span>Login</span>
+        <li><a href="#"><span>Login</span>
                 <i class="material-icons left">https</i></a></li>
-               
     </ul>
 
 
