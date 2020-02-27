@@ -7,6 +7,8 @@
     $stmt->execute();
     $events = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+  
+
 ?>
 
 

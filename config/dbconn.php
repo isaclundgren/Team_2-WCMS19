@@ -33,6 +33,7 @@ try {
                 event_id int(11) NOT NULL,
                 FOREIGN KEY (event_id)
                 REFERENCES event_table(event_id),
+                ON DELETE CASCADE,
                 signup_firstname VARCHAR(30) NOT NULL,
                 signup_lastname VARCHAR(50) NOT NULL,
                 signup_mail VARCHAR(50) NOT NULL);";

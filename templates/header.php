@@ -29,6 +29,7 @@
       var count = $("[type='checkbox']:checked").length;
   });
 });
+
     </script>
 </head>
 <body>
@@ -42,7 +43,7 @@
         <ul class="right hide-on-med-and-down">
           <li><a href="event/createevent.php" style="color: #3D4849 !important;">Create Event</a></li>
           <li><a href="../index.php" style="color: #3D4849 !important;">Home</a></li>
-          <li><a href="#" style="color: #3D4849 !important;">Login</a></li>
+          <li><a href="account/login.php" style="color: #3D4849 !important;">Login</a></li>
         </ul>
       </div>
     </div>

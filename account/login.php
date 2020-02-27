@@ -24,7 +24,7 @@ session_start();
                 if($count > 0) 
                 {
                     $_SESSION["user_mail"] = $_POST["user_mail"];
-                    header("location:login_success.php");
+                    header("location:../");
                 }
                 else 
                 {
