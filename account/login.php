@@ -24,7 +24,7 @@ session_start();
                 if($count > 0) 
                 {
                     $_SESSION["user_mail"] = $_POST["user_mail"];
-                    header("location:login_success.php");
+                    header("location:../");
                 }
                 else 
                 {
@@ -42,17 +42,17 @@ session_start();
 ?>
  <div class="container" 
     style="width:500px;">
-    <h3 align="">Login</h3></br />
+    <h3>Login</h3></br />
 
 <form method="post">
-    <label></label>
+    <label>Email</label>
     <input 
     type="text" 
     name="user_mail" 
     class="form-control" />
     <br />
 
-    <label>user_password</label>
+    <label>password</label>
     <input
     type="password"
     name="user_password"
@@ -61,9 +61,8 @@ session_start();
     <input 
     type="submit"
     name="login"
-    class="btn btn-info"
+    class="waves-effect waves-light btn"
     value="Login" />
 
 
 </form>
-<?php include('../templates/footer.php')?>

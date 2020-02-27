@@ -8,9 +8,16 @@
 <?include ('event/showattending.php');?>
 
 
+<?php
+session_start();
+// if(isset($_SESSION["user_mail"]))
+// {
+//     echo '<h3>Login Success, Welcome - '.$_SESSION["user_mail"].'</h3>';
+//     echo '<br /><br /br><a href="account/logout_success.php">Logout</a>';
+// }
 
+?>
 
-   
 
     <!-- // display events -->
     
@@ -65,11 +72,17 @@
                                     <input type="email" name="signup_mail" required>
                                     <input type="hidden" value="<? echo $event['event_id']?>" name="event_id">
                                     <input type="submit" name="submit" value="submit" class="waves-effect waves-light btn"></button>
-                                    
+            
                                     </form>
                         </div>
                                 </li>
                                 </ul>
+                                <form method="post" action="event/deleteevent.php">
+                                <?php if ($_SESSION['user_mail']) : ?>
+                                <input type="hidden" value="<? echo $event['event_id']?>" name="event_id">
+                                <button type="submit" name="submit" value="Delete" class="waves-effect waves-light btn">Delete</button>
+                                <?php endif; ?>
+                                </form>
                     </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4"><? echo $event['title']?><i class="material-icons right">close</i></span>
@@ -85,6 +98,12 @@
                 </div>
             <? } ?> 
         </div>
+        <? if(isset($_SESSION["user_mail"])){
+                echo '<p>Login Success, Welcome - '.$_SESSION["user_mail"].'</p>';
+                echo '<br /><br /br><a href="account/logout_success.php">Logout</a>';
+                
+            }
+?>
       </div>
       
    
