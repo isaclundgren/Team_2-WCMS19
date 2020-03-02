@@ -41,9 +41,11 @@
           <div class="material-icons">menu</div>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="event/createevent.php" style="color: #3D4849 !important;">Create Event</a></li>
+          <li><a href="../event/createevent.php" style="color: #3D4849 !important;">Create Event</a></li>
           <li><a href="../index.php" style="color: #3D4849 !important;">Home</a></li>
-          <li><a href="account/login.php" style="color: #3D4849 !important;">Login</a></li>
+          <li><a href="../account/login.php" style="color: #3D4849 !important;">Login</a></li>
+          <li><a href="../account/signup.php" style="color: #3D4849 !important;">signup</a></li>
+
         </ul>
       </div>
     </div>
@@ -64,7 +66,7 @@
                 <i class="material-icons left">Home</i></a></li>
         <li><a href="#"><span>Create Event</span>
                 <i class="material-icons left">create</i></a></li>
-        <li><a href=""><span>Login</span>
+        <li><a href="#"><span>Login</span>
                 <i class="material-icons left">https</i></a></li>
                
     </ul>

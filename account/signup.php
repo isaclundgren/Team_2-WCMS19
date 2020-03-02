@@ -23,7 +23,7 @@ include ('../templates/header.php');
     
     </form>
   </div>
-  <a href= "account/login.php" title="Login" class="ngl btn-floating btn-large waves-effect #8d6e63 brown lighten-1"><i class="material-icons">input</i></a>
+  <a href= "../account/login.php" title="Login" class="ngl btn-floating btn-large waves-effect #8d6e63 brown lighten-1"><i class="material-icons">input</i></a>
 </div>
 
 

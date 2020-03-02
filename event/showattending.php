@@ -1,6 +1,3 @@
-
-<!-- Getting attending and looping through each of them in index.php -->
-
 <?
 
     $sql = "SELECT * FROM event_signup";
